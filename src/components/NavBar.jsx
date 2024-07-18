@@ -3,13 +3,16 @@ import Link from "next/link";
 export default function NavBar() {
     return (
         <nav>
-            <ul className="flex gap-2">
+            <ul className="flex gap-2 ">
                 <li>
-                    <Link href="/" className="text-fuchsia-500 hover:underline">
-                        Home
+                    <Link
+                        href="/"
+                        className="font-orbitron font-bold text-fuchsia-500 hover:underline"
+                    >
+                        Hojun Gamer
                     </Link>
                 </li>
-                <li>
+                <li className="ml-auto">
                     <Link
                         href="/about"
                         className="text-fuchsia-500 hover:underline"
@@ -22,7 +25,7 @@ export default function NavBar() {
                         href="/reviews"
                         className="text-fuchsia-500 hover:underline"
                     >
-                        review
+                        Reviews
                     </Link>
                 </li>
             </ul>

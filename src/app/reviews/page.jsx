@@ -1,16 +1,14 @@
-import Link from "next/link";
+import Heading from "@/components/Heading";
+import Card from "@/components/Card";
 
 export default function reviewPage() {
     return (
         <>
-            <h1>내 소개를 해볼까</h1>
-            <ul>
-                <li>
-                    <Link href={"/reviews/night"}>night</Link>
-                </li>
-                <li>
-                    <Link href={"/reviews/poketmon"}>poketmon</Link>
-                </li>
+            <Heading>Reviews</Heading>
+            <ul className="flex flex-col gap-3">
+                <Card title={"hollow-knight"} />
+
+                <Card title={"poketmon"} />
             </ul>
         </>
     );
